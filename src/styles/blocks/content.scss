@@ -1,0 +1,28 @@
+.content {
+  width: 75%;
+
+  &__title {
+    margin: 140px 0 32px;
+
+    font-weight: 700;
+    font-size: 50px;
+
+    color: $color-primary-200;
+  }
+
+  &__description {
+    margin-bottom: 70px;
+
+    width: 65%;
+
+    display: flex;
+    gap: 40px;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 15px;
+
+    color: $color-primary-200;
+  }
+}

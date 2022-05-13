@@ -1,0 +1,9 @@
+.page {
+  scroll-behavior: smooth;
+  font-family: "Noto Sans", sans-serif;
+
+  &__body {
+    margin: 0;
+    padding: 0;
+  }
+}
