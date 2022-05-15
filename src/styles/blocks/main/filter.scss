@@ -1,0 +1,31 @@
+.filter {
+  &__up {
+    margin-bottom: 25px;
+
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  &__down {
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__sort {
+    display: flex;
+    gap: 10px;
+  }
+
+  &__sortBy {
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  &__title {
+    font-size: 12px;
+    font-weight: 400;
+    color: $color-secondary-200;
+  }
+}

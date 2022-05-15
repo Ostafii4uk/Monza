@@ -4,19 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Monza | Motorsports</title>
-    <link rel="stylesheet" href="./styles/main.scss">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700&family=Poppins:wght@700&display=swap" rel="stylesheet">
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous">
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    >
+    <link rel="stylesheet" href="./styles/main.scss">
   </head>
   <body class="page__body">
-    <div class="container">
-      <header class="header">
+    <header class="header">
+      <div class="wrapper">
         <div class="header__nav nav">
           <a href="#">
             <img
@@ -88,13 +89,642 @@
             Browse cars
           </button>
         </div>
-      </header>
-    </div>
+      </div>
+    </header>
     <main class="page__main main">
+      <div class="main__current current">
+        <div class="wrapper">
+          <h2 class="current__title">
+            CURRENT OFFERS
+          </h2>
+          <div class="current__filter filter">
+            <div class="filter__up">
+              <div class="dropdown">
+                <button
+                  class="btn btn-outline-dark dropdown-toggle drop-menu"
+                  type="button"
+                  id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Year
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li class="dropdown-item" href="#">Action</li>
+                  <li class="dropdown-item" href="#">Another action</li>
+                  <li class="dropdown-item" href="#">Something else here</li>
+                </ul>
+              </div>
+              <div class="dropdown">
+                <button
+                  class="btn btn-outline-dark dropdown-toggle drop-menu"
+                  type="button"
+                  id="dropdownMenuButton2"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Make
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+              <div class="dropdown">
+                <button
+                  class="btn btn-outline-dark dropdown-toggle drop-menu"
+                  type="button"
+                  id="dropdownMenuButton3"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Model
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+              <div class="dropdown">
+                <button
+                  class="btn btn-outline-dark dropdown-toggle drop-menu"
+                  type="button"
+                  id="dropdownMenuButton4"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Trim
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton4">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+              <div class="dropdown">
+                <button
+                  class="btn btn-outline-dark dropdown-toggle drop-menu"
+                  type="button"
+                  id="dropdownMenuButton5"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Mileage
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton5">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+              <button type="button" class="btn button__submit">
+                40 cars
+              </button>
+            </div>
+            <div class="filter__down">
+              <div class="filter__checkbox">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value="availableVehicles"
+                    id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Instantly available vehicles
+                  </label>
+                </div>
+              </div>
+              <div class="filter__sort">
+                <div class="filter__sortBy">
+                  Sort by
+                </div>
+                <div class="filter__logo">
+                  <svg
+                    width="7"
+                    height="8"
+                    viewBox="0 0 7 8"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M3.33334 0L0.444458 2.88167H2.61112V7.94446H4.05555V2.88167H6.22221L3.33334 0Z" fill="#DF4E3C"></path>
+                  </svg>
 
+                  <svg
+                    width="7"
+                    height="8"
+                    viewBox="0 0 7 8"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M4.38892 5.11833V0.055542H2.9445V5.11833H0.777832L3.66671 8L6.55558 5.11833H4.38892Z" fill="#8D8D8D"></path>
+                  </svg>
+                </div>
+                <div class="filter__title">
+                  Publication date (ascending)
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="current__cars">
+            <div class="car">
+              <div class="car__image">
+                <img src="./images/cars/1.jpg" alt="VW Atlas">
+              </div>
+              <div class="car__title">
+                <div class="car__year">
+                  2019
+                </div>
+                <div class="car__model">
+                  Volkswagen Tiguan
+                </div>
+              </div>
+              <div class="car__description">
+                <div class="car__mileage">
+                  19,855 km
+                </div>
+                <div class="car__transmition">
+                  | Automatic |
+                </div>
+                <div class="car__fuel">
+                  Diesel
+                </div>
+              </div>
+              <div class="car__price">
+                $34,888
+              </div>
+            </div>
+            <div class="car">
+              <div class="car__image">
+                <img src="./images/cars/2.jpg" alt="VW Atlas">
+              </div>
+              <div class="car__title">
+                <div class="car__year">
+                  2014
+                </div>
+                <div class="car__model">
+                  Toyota Highlander XLE
+                </div>
+              </div>
+              <div class="car__description">
+                <div class="car__mileage">
+                  69,000 km
+                </div>
+                <div class="car__transmition">
+                  | Automatic |
+                </div>
+                <div class="car__fuel">
+                  Gas
+                </div>
+              </div>
+              <div class="car__price">
+                $27,875
+              </div>
+            </div>
+            <div class="car">
+              <div class="car__image">
+                <img src="./images/cars/3.jpg" alt="VW Atlas">
+              </div>
+              <div class="car__title">
+                <div class="car__year">
+                  2017
+                </div>
+                <div class="car__model">
+                  Lexus RX 350 LUXURY
+                </div>
+              </div>
+              <div class="car__description">
+                <div class="car__mileage">
+                  39,850 km
+                </div>
+                <div class="car__transmition">
+                  | Automatic |
+                </div>
+                <div class="car__fuel">
+                  Gas
+                </div>
+              </div>
+              <div class="car__price">
+                $38,775
+              </div>
+            </div>
+            <div class="car">
+              <div class="car__image">
+                <img src="./images/cars/4.jpg" alt="VW Atlas">
+              </div>
+              <div class="car__title">
+                <div class="car__year">
+                  2016
+                </div>
+                <div class="car__model">
+                  Toyota Highlander LE A...
+                </div>
+              </div>
+              <div class="car__description">
+                <div class="car__mileage">
+                  104,000 km
+                </div>
+                <div class="car__transmition">
+                  | Automatic |
+                </div>
+                <div class="car__fuel">
+                  Gas
+                </div>
+              </div>
+              <div class="car__price">
+                $23,728
+              </div>
+            </div>
+            <div class="car">
+              <div class="car__image">
+                <img src="./images/cars/5.jpg" alt="VW Atlas">
+              </div>
+              <div class="car__title">
+                <div class="car__year">
+                  2017
+                </div>
+                <div class="car__model">
+                  Hyundai Elantra
+                </div>
+              </div>
+              <div class="car__description">
+                <div class="car__mileage">
+                  95,000  km
+                </div>
+                <div class="car__transmition">
+                  | Automatic |
+                </div>
+                <div class="car__fuel">
+                  Gas
+                </div>
+              </div>
+              <div class="car__price">
+                $11,788
+              </div>
+            </div>
+            <div class="car">
+              <div class="car__image">
+                <img src="./images/cars/6.jpg" alt="VW Atlas">
+              </div>
+              <div class="car__title">
+                <div class="car__year">
+                  2016
+                </div>
+                <div class="car__model">
+                  Mercedes-Benz GLE-Cl...
+                </div>
+              </div>
+              <div class="car__description">
+                <div class="car__mileage">
+                  59,800 km
+                </div>
+                <div class="car__transmition">
+                  | Automatic |
+                </div>
+                <div class="car__fuel">
+                  Diesel
+                </div>
+              </div>
+              <div class="car__price">
+                $38,878
+              </div>
+            </div>
+            <div class="car">
+              <div class="car__image">
+                <img src="./images/cars/7.jpg" alt="VW Atlas">
+              </div>
+              <div class="car__title">
+                <div class="car__year">
+                  2015
+                </div>
+                <div class="car__model">
+                  Toyota Venza AWD XLE...
+                </div>
+              </div>
+              <div class="car__description">
+                <div class="car__mileage">
+                  99,000 km
+                </div>
+                <div class="car__transmition">
+                  | Automatic |
+                </div>
+                <div class="car__fuel">
+                  Gas
+                </div>
+              </div>
+              <div class="car__price">
+                $18,620
+              </div>
+            </div>
+            <div class="car">
+              <div class="car__image">
+                <img src="./images/cars/8.jpg" alt="VW Atlas">
+              </div>
+              <div class="car__title">
+                <div class="car__year">
+                  2016
+                </div>
+                <div class="car__model">
+                  Lexus RX 350 F-SPORT
+                </div>
+              </div>
+              <div class="car__description">
+                <div class="car__mileage">
+                  86,000 km
+                </div>
+                <div class="car__transmition">
+                  | Automatic |
+                </div>
+                <div class="car__fuel">
+                  Gas
+                </div>
+              </div>
+              <div class="car__price">
+                $34,888
+              </div>
+            </div>
+            <div class="car">
+              <div class="car__image">
+                <img src="./images/cars/9.jpg" alt="VW Atlas">
+              </div>
+              <div class="car__title">
+                <div class="car__year">
+                  2019
+                </div>
+                <div class="car__model">
+                  Volkswagen Tiguan
+                </div>
+              </div>
+              <div class="car__description">
+                <div class="car__mileage">
+                  19,855 km
+                </div>
+                <div class="car__transmition">
+                  | Automatic |
+                </div>
+                <div class="car__fuel">
+                  Diesel
+                </div>
+              </div>
+              <div class="car__price">
+                $34,888
+              </div>
+            </div>
+            <div class="car">
+              <div class="car__image">
+                <img src="./images/cars/10.jpg" alt="VW Atlas">
+              </div>
+              <div class="car__title">
+                <div class="car__year">
+                  2014
+                </div>
+                <div class="car__model">
+                  Toyota Highlander XLE
+                </div>
+              </div>
+              <div class="car__description">
+                <div class="car__mileage">
+                  69,000 km
+                </div>
+                <div class="car__transmition">
+                  | Automatic |
+                </div>
+                <div class="car__fuel">
+                  Gas
+                </div>
+              </div>
+              <div class="car__price">
+                $27,875
+              </div>
+            </div>
+            <div class="car">
+              <div class="car__image">
+                <img src="./images/cars/11.jpg" alt="VW Atlas">
+              </div>
+              <div class="car__title">
+                <div class="car__year">
+                  2017
+                </div>
+                <div class="car__model">
+                  Lexus RX 350 LUXURY
+                </div>
+              </div>
+              <div class="car__description">
+                <div class="car__mileage">
+                  39,850 km
+                </div>
+                <div class="car__transmition">
+                  | Automatic |
+                </div>
+                <div class="car__fuel">
+                  Gas
+                </div>
+              </div>
+              <div class="car__price">
+                $38,775
+              </div>
+            </div>
+            <div class="car">
+              <div class="car__image">
+                <img src="./images/cars/12.jpg" alt="VW Atlas">
+              </div>
+              <div class="car__title">
+                <div class="car__year">
+                  2016
+                </div>
+                <div class="car__model">
+                  Toyota Highlander LE A...
+                </div>
+              </div>
+              <div class="car__description">
+                <div class="car__mileage">
+                  104,000 km
+                </div>
+                <div class="car__transmition">
+                  | Automatic |
+                </div>
+                <div class="car__fuel">
+                  Gas
+                </div>
+              </div>
+              <div class="car__price">
+                $23,728
+              </div>
+            </div>
+            <div class="car">
+              <div class="car__image">
+                <img src="./images/cars/13.jpg" alt="VW Atlas">
+              </div>
+              <div class="car__title">
+                <div class="car__year">
+                  2019
+                </div>
+                <div class="car__model">
+                  Volkswagen Tiguan
+                </div>
+              </div>
+              <div class="car__description">
+                <div class="car__mileage">
+                  19,855 km
+                </div>
+                <div class="car__transmition">
+                  | Automatic |
+                </div>
+                <div class="car__fuel">
+                  Diesel
+                </div>
+              </div>
+              <div class="car__price">
+                $34,888
+              </div>
+            </div>
+            <div class="car">
+              <div class="car__image">
+                <img src="./images/cars/14.jpg" alt="VW Atlas">
+              </div>
+              <div class="car__title">
+                <div class="car__year">
+                  2014
+                </div>
+                <div class="car__model">
+                  Toyota Highlander XLE
+                </div>
+              </div>
+              <div class="car__description">
+                <div class="car__mileage">
+                  69,000 km
+                </div>
+                <div class="car__transmition">
+                  | Automatic |
+                </div>
+                <div class="car__fuel">
+                  Gas
+                </div>
+              </div>
+              <div class="car__price">
+                $27,875
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main__subscription subscription">
+        <div class="wrapper">
+          <div class="subscription__content">
+            <div class="subscription__text">
+              <h4 class="subscription__title">
+                Haven't found a suitable vehicle?
+              </h4>
+              <p class="subscription__subtitle">
+                Sign up for our newsletter and be the first to know when we publish new vehicle offers.
+              </p>
+            </div>
+            <div class="subscription__form">
+              <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
+                <input
+                  class="subscription__input"
+                  type="email"
+                  name="email"
+                  placeholder="Enter your email"
+                  required
+                >
+                <button type="submit" class="btn btn-outline-light subscription__btn">
+                  Subscribe now
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main__question question">
+        <div class="wrapper">
+          <h2 class="current__title">
+            popular questions
+          </h2>
+
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  Accordion Item #1
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  Accordion Item #2
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  Accordion Item #3
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
     <footer class="page__footer footer">
 
     </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

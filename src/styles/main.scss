@@ -4,8 +4,14 @@
 @import "utils/vars";
 
 @import "blocks/page.scss";
-@import "blocks/container.scss";
-@import "blocks/header.scss";
-@import "blocks/nav.scss";
-@import "blocks/content.scss";
+@import "blocks/wrapper.scss";
+@import "blocks/header/header.scss";
+@import "blocks/header/nav.scss";
+@import "blocks/header/content.scss";
 @import "blocks/button.scss";
+@import "blocks/main/current.scss";
+@import "blocks/main/filter.scss";
+@import "blocks/main/car.scss";
+@import "blocks/main/drop.scss";
+@import "blocks/main/subscription.scss";
+@import "blocks/main/question.scss";

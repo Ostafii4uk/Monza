@@ -1,0 +1,47 @@
+.car {
+  display: inline-block;
+
+  background-color: $color-secondary-500;
+
+  &__image {
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    margin: 0 0 10px 20px;
+    display: flex;
+    gap: 8px;
+  }
+
+  &__year {
+    font-family: "Poppins", sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+
+    color: $color-secondary-200;
+  }
+
+  &__model {
+    font-size: 17px;
+    font-weight: 400;
+  }
+
+  &__description {
+    margin: 0 0 25px 20px;
+
+    display: flex;
+    gap: 8px;
+
+    font-size: 14px;
+    font-weight: 300;
+
+    color: $color-secondary-200;
+  }
+
+  &__price {
+    margin: 0 0 35px 20px;
+
+    font-size: 20px;
+    font-weight: 500;
+  }
+}
