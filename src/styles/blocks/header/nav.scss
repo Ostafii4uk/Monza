@@ -27,13 +27,16 @@
       color: $color-primary-300;
       text-decoration: none;
       transition: color 0.3s linear;
+
+      .nav__social {
+        fill: $color-primary-300;
+        transition: fill 0.3s linear;
+      }
     }
   }
 
-  &__social {
-    &:hover {
-      fill: $color-primary-300;
-      transition: fill 0.3s linear;
-    }
+  &__socials {
+    display: flex;
+    gap: 30px;
   }
 }
