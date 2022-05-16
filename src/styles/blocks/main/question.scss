@@ -1,3 +1,65 @@
-// .question {
+.question {
+  margin: 0 auto;
 
-// }
+  width: 820px;
+
+  &__accordion {
+    margin-bottom: 200px;
+  }
+
+  &__button {
+    padding: auto;
+
+    background-color: $background-color;
+    border: none;
+    border-bottom: 1px solid $color-secondary-400;
+
+    font-size: 15px;
+
+    transition: padding 0.3s linear;
+
+    &:not(.collapsed) {
+      padding: 24px 40px;
+
+      color: $color-primary-300;
+      background-color: $color-secondary-500;
+
+      border-bottom: none;
+      box-shadow: none;
+
+      transition: padding 0.3s linear, background-color 0.3s linear;
+    }
+
+    &__item {
+      border: 0;
+
+      &:first-of-type {
+        border-radius: 0;
+
+        .question__button {
+          border-radius: 0;
+        }
+      }
+
+      &:last-of-type {
+        border-radius: 0;
+
+        .question__button {
+          &.collapsed {
+            border-radius: 0;
+          }
+        }
+      }
+    }
+
+  }
+
+  &__answer {
+    padding: 0 40px 24px;
+
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 150%;
+  }
+}
