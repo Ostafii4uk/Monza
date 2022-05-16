@@ -13,9 +13,14 @@
     justify-content: space-between;
   }
 
+  &__checked {
+    cursor: pointer;
+  }
+
   &__sort {
     display: flex;
     gap: 10px;
+    align-items: center;
   }
 
   &__sortBy {
@@ -23,9 +28,59 @@
     font-weight: 400;
   }
 
+  &__logo-arow {
+    transform: translateX(5px) translateY(-5px);
+  }
+
   &__title {
     font-size: 12px;
     font-weight: 400;
     color: $color-secondary-200;
+  }
+
+  &__dropdown {
+    padding: 0;
+
+    background-color: transparent;
+    border: none;
+
+    color: $color-secondary-200;
+
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: right;
+
+    &:hover {
+      background-color: transparent;
+      color: $color-primary-300;
+    }
+
+    &::after {
+      content: none;
+    }
+
+    &:active,
+    .btn-check:active + &,
+    .btn-check:checked + &,
+    &.active,
+    &.show {
+      color: $color-secondary-200;
+      background-color: transparent;
+      border: none;
+
+      &:focus {
+        box-shadow: none;
+      }
+    }
+  }
+
+  &__item {
+    transition: color 0.3s linear;
+    &:hover {
+      color: $color-primary-300;
+      background-color: transparent;
+    }
   }
 }

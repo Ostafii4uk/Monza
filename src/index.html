@@ -190,13 +190,13 @@
             </div>
             <div class="filter__down">
               <div class="filter__checkbox">
-                <div class="form-check">
+                <div class="form-check filter__checked">
                   <input
-                    class="form-check-input"
+                    class="form-check-input filter__checked"
                     type="checkbox"
                     value="availableVehicles"
                     id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault">
+                  <label class="form-check-label filter__checked" for="flexCheckDefault">
                     Instantly available vehicles
                   </label>
                 </div>
@@ -207,6 +207,7 @@
                 </div>
                 <div class="filter__logo">
                   <svg
+                    class="filter__logo-arow"
                     width="7"
                     height="8"
                     viewBox="0 0 7 8"
@@ -226,8 +227,27 @@
                     <path d="M4.38892 5.11833V0.055542H2.9445V5.11833H0.777832L3.66671 8L6.55558 5.11833H4.38892Z" fill="#8D8D8D"></path>
                   </svg>
                 </div>
-                <div class="filter__title">
-                  Publication date (ascending)
+                <div class="dropdown">
+                  <a
+                    class="btn btn-secondary dropdown-toggle filter__dropdown"
+                    href="#"
+                    role="button"
+                    id="dropdownMenuLink"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Publication date (ascending)
+                  </a>
+
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item filter__item" href="#">Publication date (descending)</a></li>
+                    <li><a class="dropdown-item filter__item" href="#">Price (ascending)</a></li>
+                    <li><a class="dropdown-item filter__item" href="#">Price (descending)</a></li>
+                    <li><a class="dropdown-item filter__item" href="#">Mileage (ascending)</a></li>
+                    <li><a class="dropdown-item filter__item" href="#">Mileage (descending)</a></li>
+                    <li><a class="dropdown-item filter__item" href="#">Performance (ascending)</a></li>
+                    <li><a class="dropdown-item filter__item" href="#">Performance (ascending)</a></li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -241,9 +261,9 @@
                 <div class="car__year">
                   2019
                 </div>
-                <div class="car__model">
+                <a href="#" class="car__model">
                   Volkswagen Tiguan
-                </div>
+                </a>
               </div>
               <div class="car__description">
                 <div class="car__mileage">
@@ -268,9 +288,9 @@
                 <div class="car__year">
                   2014
                 </div>
-                <div class="car__model">
+                <a href="#" class="car__model">
                   Toyota Highlander XLE
-                </div>
+                </a>
               </div>
               <div class="car__description">
                 <div class="car__mileage">
@@ -295,9 +315,9 @@
                 <div class="car__year">
                   2017
                 </div>
-                <div class="car__model">
+                <a href="#" class="car__model">
                   Lexus RX 350 LUXURY
-                </div>
+                </a>
               </div>
               <div class="car__description">
                 <div class="car__mileage">
@@ -322,9 +342,9 @@
                 <div class="car__year">
                   2016
                 </div>
-                <div class="car__model">
+                <a href="#" class="car__model">
                   Toyota Highlander LE A...
-                </div>
+                </a>
               </div>
               <div class="car__description">
                 <div class="car__mileage">
@@ -349,9 +369,9 @@
                 <div class="car__year">
                   2017
                 </div>
-                <div class="car__model">
+                <a href="#" class="car__model">
                   Hyundai Elantra
-                </div>
+                </a>
               </div>
               <div class="car__description">
                 <div class="car__mileage">
@@ -376,9 +396,9 @@
                 <div class="car__year">
                   2016
                 </div>
-                <div class="car__model">
+                <a href="#" class="car__model">
                   Mercedes-Benz GLE-Cl...
-                </div>
+                </a>
               </div>
               <div class="car__description">
                 <div class="car__mileage">
@@ -395,7 +415,7 @@
                 $38,878
               </div>
             </div>
-            <div class="car">
+            <div class="car" disabled>
               <div class="car__image">
                 <img src="./images/cars/7.jpg" alt="VW Atlas">
               </div>
@@ -403,9 +423,9 @@
                 <div class="car__year">
                   2015
                 </div>
-                <div class="car__model">
+                <a href="#" class="car__model">
                   Toyota Venza AWD XLE...
-                </div>
+                </a>
               </div>
               <div class="car__description">
                 <div class="car__mileage">
@@ -430,9 +450,9 @@
                 <div class="car__year">
                   2016
                 </div>
-                <div class="car__model">
+                <a href="#" class="car__model">
                   Lexus RX 350 F-SPORT
-                </div>
+                </a>
               </div>
               <div class="car__description">
                 <div class="car__mileage">
@@ -457,9 +477,9 @@
                 <div class="car__year">
                   2019
                 </div>
-                <div class="car__model">
+                <a href="#" class="car__model">
                   Volkswagen Tiguan
-                </div>
+                </a>
               </div>
               <div class="car__description">
                 <div class="car__mileage">
@@ -484,9 +504,9 @@
                 <div class="car__year">
                   2014
                 </div>
-                <div class="car__model">
+                <a href="#" class="car__model">
                   Toyota Highlander XLE
-                </div>
+                </a>
               </div>
               <div class="car__description">
                 <div class="car__mileage">
@@ -511,9 +531,9 @@
                 <div class="car__year">
                   2017
                 </div>
-                <div class="car__model">
+                <a href="#" class="car__model">
                   Lexus RX 350 LUXURY
-                </div>
+                </a>
               </div>
               <div class="car__description">
                 <div class="car__mileage">
@@ -538,9 +558,9 @@
                 <div class="car__year">
                   2016
                 </div>
-                <div class="car__model">
+                <a href="#" class="car__model">
                   Toyota Highlander LE A...
-                </div>
+                </a>
               </div>
               <div class="car__description">
                 <div class="car__mileage">
@@ -565,9 +585,9 @@
                 <div class="car__year">
                   2019
                 </div>
-                <div class="car__model">
+                <a href="#" class="car__model">
                   Volkswagen Tiguan
-                </div>
+                </a>
               </div>
               <div class="car__description">
                 <div class="car__mileage">
@@ -592,9 +612,9 @@
                 <div class="car__year">
                   2014
                 </div>
-                <div class="car__model">
+                <a href="#" class="car__model">
                   Toyota Highlander XLE
-                </div>
+                </a>
               </div>
               <div class="car__description">
                 <div class="car__mileage">

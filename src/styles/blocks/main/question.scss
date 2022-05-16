@@ -29,29 +29,28 @@
 
       transition: padding 0.3s linear, background-color 0.3s linear;
     }
+  }
 
-    &__item {
-      border: 0;
+  &__item {
+    border: 0;
 
-      &:first-of-type {
+    &:first-of-type {
+      border-radius: 0;
+
+      .question__button {
         border-radius: 0;
-
-        .question__button {
-          border-radius: 0;
-        }
-      }
-
-      &:last-of-type {
-        border-radius: 0;
-
-        .question__button {
-          &.collapsed {
-            border-radius: 0;
-          }
-        }
       }
     }
 
+    &:last-of-type {
+      border-radius: 0;
+
+      .question__button {
+        &.collapsed {
+          border-radius: 0;
+        }
+      }
+    }
   }
 
   &__answer {

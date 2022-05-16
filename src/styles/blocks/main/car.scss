@@ -3,6 +3,13 @@
 
   background-color: $color-secondary-500;
 
+  transition: transform 0.3s linear, box-shadow 0.3s linear;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 18px rgba(68, 68, 68, 0.09);
+  }
+
   &__image {
     margin-bottom: 20px;
   }
@@ -11,6 +18,20 @@
     margin: 0 0 10px 20px;
     display: flex;
     gap: 8px;
+    align-items: center;
+  }
+
+  &__model {
+    color: $color-primary-100;
+
+    font-size: 17px;
+    font-weight: 400;
+
+    &:hover {
+      color: $color-primary-100;
+      text-decoration: underline;
+      cursor: pointer;
+    }
   }
 
   &__year {
@@ -19,11 +40,6 @@
     font-weight: 400;
 
     color: $color-secondary-200;
-  }
-
-  &__model {
-    font-size: 17px;
-    font-weight: 400;
   }
 
   &__description {
