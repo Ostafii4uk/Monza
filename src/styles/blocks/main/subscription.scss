@@ -43,6 +43,7 @@
     width: 500px;
     height: 55px;
 
+    border: 1px solid $color-secondary-300;
     border-radius: 15px;
 
     color: $color-primary-200;
@@ -62,5 +63,10 @@
     line-height: 20px;
 
     border-radius: 15px;
+
+    &:hover {
+      background-color: transparent;
+      color: $color-primary-200;
+    }
   }
 }

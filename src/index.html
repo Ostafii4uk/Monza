@@ -19,12 +19,13 @@
       crossorigin="anonymous"
       defer
     ></script>
+    <script src="./scripts/main.js" defer></script>
   </head>
-  <body class="page__body">
+  <body class="page__body" id="monza">
     <header class="header">
       <div class="wrapper">
         <div class="header__nav nav">
-          <a href="#">
+          <a href="#monza">
             <img
               class="nav__logo"
               src="./images/logo.png"
@@ -34,22 +35,27 @@
 
           <ul class="nav__list">
             <li class="nav__item">
-              <a class="nav__link" href="#">
+              <a class="nav__link" href="#cars">
                 Inventory
               </a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="#">
+              <a class="nav__link" href="#question">
                 Financing
               </a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="#">
+              <a class="nav__link" href="#contacts">
                 Contacts
               </a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="#">
+              <a
+                class="nav__link"
+                href="https://www.facebook.com/MonzaMotorsports/"
+                target="_blank"
+                title="Facebook"
+              >
                 <svg width="9" height="18"
                   viewBox="0 0 9 18" fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -63,7 +69,12 @@
               </a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="#">
+              <a
+                class="nav__link"
+                href="https://www.instagram.com/monza_motorsports/"
+                target="_blank"
+                title="Instagram"
+              >
                 <svg
                   width="18" height="18"
                   viewBox="0 0 18 18" fill="none"
@@ -97,94 +108,44 @@
       </div>
     </header>
     <main class="page__main main">
-      <div class="main__current current">
+      <div class="main__current current" id="cars">
         <div class="wrapper">
           <h2 class="current__title">
             CURRENT OFFERS
           </h2>
           <div class="current__filter filter">
             <div class="filter__up">
-              <div class="dropdown">
-                <button
-                  class="btn btn-outline-dark dropdown-toggle drop-menu"
-                  type="button"
-                  id="dropdownMenuButton1"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Year
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                  <li class="dropdown-item" href="#">Action</li>
-                  <li class="dropdown-item" href="#">Another action</li>
-                  <li class="dropdown-item" href="#">Something else here</li>
-                </ul>
-              </div>
-              <div class="dropdown">
-                <button
-                  class="btn btn-outline-dark dropdown-toggle drop-menu"
-                  type="button"
-                  id="dropdownMenuButton2"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Make
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </div>
-              <div class="dropdown">
-                <button
-                  class="btn btn-outline-dark dropdown-toggle drop-menu"
-                  type="button"
-                  id="dropdownMenuButton3"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Model
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </div>
-              <div class="dropdown">
-                <button
-                  class="btn btn-outline-dark dropdown-toggle drop-menu"
-                  type="button"
-                  id="dropdownMenuButton4"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Trim
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton4">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </div>
-              <div class="dropdown">
-                <button
-                  class="btn btn-outline-dark dropdown-toggle drop-menu"
-                  type="button"
-                  id="dropdownMenuButton5"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Mileage
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton5">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </div>
-              <button type="button" class="btn button__submit">
+              <select class="form-select filter__select" aria-label="Default select example">
+                <option selected disabled>Year</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+              <select class="form-select filter__select" aria-label="Default select example">
+                <option selected disabled>Make</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+              <select class="form-select filter__select" aria-label="Default select example">
+                <option selected disabled>Model</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+              <select class="form-select filter__select" aria-label="Default select example">
+                <option selected disabled>Trim</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+              <select class="form-select filter__select" aria-label="Default select example">
+                <option selected disabled>Mileage </option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+              <button type="submit" class="btn button__submit">
                 40 cars
               </button>
             </div>
@@ -415,15 +376,16 @@
                 $38,878
               </div>
             </div>
-            <div class="car" disabled>
+            <div class="car">
               <div class="car__image">
                 <img src="./images/cars/7.jpg" alt="VW Atlas">
+                <p class="car__sold">SOLD</p>
               </div>
               <div class="car__title">
                 <div class="car__year">
                   2015
                 </div>
-                <a href="#" class="car__model">
+                <a href="#" class="car__model car__model-sold">
                   Toyota Venza AWD XLE...
                 </a>
               </div>
@@ -438,12 +400,12 @@
                   Gas
                 </div>
               </div>
-              <div class="car__price">
+              <div class="car__price car__price-sold">
                 $18,620
               </div>
             </div>
             <div class="car">
-              <div class="car__image">
+              <div class="car__image car__image-new">
                 <img src="./images/cars/8.jpg" alt="VW Atlas">
               </div>
               <div class="car__title">
@@ -634,7 +596,7 @@
           </div>
         </div>
       </div>
-      <div class="main__subscription subscription">
+      <div class="main__subscription subscription" id="contacts">
         <div class="wrapper">
           <div class="subscription__content">
             <div class="subscription__text">
@@ -646,7 +608,11 @@
               </p>
             </div>
             <div class="subscription__form">
-              <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
+              <form
+                class="subscription__entry"
+                action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+                method="post"
+              >
                 <input
                   class="subscription__input"
                   type="email"
@@ -654,7 +620,7 @@
                   placeholder="Enter your email"
                   required
                 >
-                <button type="submit" class="btn btn-outline-light subscription__btn">
+                <button type="submit" class="btn btn-light subscription__btn">
                   Subscribe now
                 </button>
               </form>
@@ -662,7 +628,7 @@
           </div>
         </div>
       </div>
-      <div class="main__question question">
+      <div class="main__question question" id="question">
         <div class="wrapper">
           <h2 class="current__title">
             popular questions
@@ -868,7 +834,7 @@
     <footer class="page__footer footer">
       <div class="wrapper">
         <div class="header__nav nav footer__nav">
-          <a href="#">
+          <a href="#monza">
             <img
               class="nav__logo"
               src="./images/logo.png"
@@ -878,23 +844,28 @@
 
           <ul class="nav__list">
             <li class="nav__item">
-              <a class="nav__link" href="#">
+              <a class="nav__link" href="#cars">
                 Inventory
               </a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="#">
+              <a class="nav__link" href="#question">
                 Financing
               </a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="#">
+              <a class="nav__link" href="#contacts">
                 Contacts
               </a>
             </li>
           </ul>
           <div class="nav__socials">
-            <a class="nav__link" href="#">
+            <a
+              class="nav__link"
+              href="https://www.facebook.com/MonzaMotorsports/"
+              target="_blank"
+              title="Facebook"
+            >
               <svg width="9" height="18"
                 viewBox="0 0 9 18" fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -906,7 +877,12 @@
                 </path>
               </svg>
             </a>
-            <a class="nav__link" href="#">
+            <a
+              class="nav__link"
+              href="https://www.instagram.com/monza_motorsports/"
+              target="_blank"
+              title="Instagram"
+            >
               <svg
                 width="18" height="18"
                 viewBox="0 0 18 18" fill="none"

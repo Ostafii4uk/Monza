@@ -7,6 +7,25 @@
     justify-content: center;
   }
 
+  &__select {
+    width: 170px;
+    height: 48px;
+
+    border: 1px solid $color-secondary-300;
+    border-radius: 15px;
+
+    background-color: transparent;
+
+    &:focus {
+      box-shadow: none;
+      border-color: $color-primary-300;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
   &__down {
     margin-bottom: 25px;
     display: flex;
